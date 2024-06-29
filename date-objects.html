@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date objects</title>
+</head>
+<body>
+    <script>
+        // Sate constructor arguments: Date (year, month, day, hour, minute, second, ms)
+        // epoch is the date that computer thinks time began. type '0' in date constructor for this
+        // passing in a number will give you a new date... 
+        // ...which is the number of milisiconds (you typed in) passed the epoch date
+
+        const date = new Date(0);
+        
+        const year = date.getFullYear();
+        const month = date.getMonth();
+        const day = date.getDate();
+        const hour = date.getHours();
+        const minutes = date.getMinutes();
+        const seconds = date.getSeconds();
+        const dayOfWeek = date.getDay();
+        
+        console.log(year);
+        console.log(month);
+        console.log(day);
+        console.log(hour);
+        console.log(seconds);
+        console.log(dayOfWeek);
+
+        date.setFullYear(2024);
+        date.setMonth(0);
+        date.setDate(1);
+        date.setHours(2);
+        date.setMinutes(3);
+        date.setSeconds(4);
+        console.log(date);
+
+        const date1 = new Date("2023-12-31");
+        const date2 = new Date("2024-01-01");
+
+        if (date2 > date1) {
+            console.log("HAPPY NEW YEAR")
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
